@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Delicious Table - Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">The Delicious Table</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="about.html" target="_blank">About Us</a></li>
+                    <li><a href="menu.html" target="_blank">Menu</a></li>
+                    <li><a href="reservations.html" target="_blank">Reservations</a></li>
+                    <li><a href="#contact" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Experience Culinary Excellence</h2>
+            <p>Where every dish tells a story of flavor and passion.</p>
+            <a href="#reservations" class="btn">Make a Reservation</a>
+        </div>
+    </section>
+    
+    <section id="reservations" class="reservations-section section-padding">
+        <div class="container">
+            <h2>Make a Reservation</h2>
+            <form class="reservation-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" max="10" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Special Requests:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Reservation</button>
+            </form>
+        </div>
+    </section>
+<section class="review-ticker-section">
+  <h2>Customer Reviews</h2>
+  <div class="review-ticker-wrapper">
+    <div class="review-ticker">
+      <div class="review-item">"Amazing service and great experience!"<br>- Alex</div>
+      <div class="review-item">"Loved the product quality. Highly recommended."<br>- Maria</div>
+      <div class="review-item">"Fast delivery and responsive support team."<br>- John</div>
+      <div class="review-item">"Absolutely loved the ambiance and staff."<br>- Sarah</div>
+      <div class="review-item">"Tasty food and great portions!"<br>- Rahul</div>
+      <div class="review-item">"Best dining experience in town."<br>- Priya</div>
+      <div class="review-item">"The desserts are to die for."<br>- Aman</div>
+      <div class="review-item">"Staff was very friendly and polite."<br>- Neha</div>
+
+      <!-- Repeat for infinite loop -->
+      <div class="review-item">"Amazing service and great experience!"<br>- Alex</div>
+      <div class="review-item">"Loved the product quality. Highly recommended."<br>- Maria</div>
+      <div class="review-item">"Fast delivery and responsive support team."<br>- John</div>
+      <div class="review-item">"Absolutely loved the ambiance and staff."<br>- Sarah</div>
+      <div class="review-item">"Tasty food and great portions!"<br>- Rahul</div>
+      <div class="review-item">"Best dining experience in town."<br>- Priya</div>
+      <div class="review-item">"The desserts are to die for."<br>- Aman</div>
+      <div class="review-item">"Staff was very friendly and polite."<br>- Neha</div>
+    </div>
+  </div>
+</section>
+
+<style>
+.review-ticker-section {
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #fff8f0;
+  padding: 20px 0;
+  margin-top: 40px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.review-ticker-section h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.review-ticker-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.review-ticker {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 40s linear infinite;
+}
+
+.review-item {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 180px;
+  margin-right: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+</style>
+
+
+<section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Location</h3>
+                    <p>123 Restaurant Avenue, Food City, 12345</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@thedelicioustable.com">info@thedelicioustable.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Hours</h3>
+                    <p>Tuesday - Sunday: 5:00 PM - 10:00 PM</p>
+                    <p>Monday: Closed</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13756.41093858588!2d74.48685928693003!3d30.461528089762833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39176f935080d7a3%3A0x5b1910cf61849a41!2sGoyal%20Hospital!5e0!3m2!1sen!2sin!4v1749726039468!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+</section>
+
+<footer class="main-footer">
+        <div class="container">
+            <p>© 2025 The Delicious Table. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><img src="Facebook.png" alt="Facebook"></a>
+                <a href="#" aria-label="Instagram"><img src="Instagram.jpeg" alt="Instagram"></a>
+                <a href="#" aria-label="Twitter"><img src="snapchat.png" alt="Twitter"></a>
+            </div>
+        </div>
+</footer>
+    
+</body>
+</html>

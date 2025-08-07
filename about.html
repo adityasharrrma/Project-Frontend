@@ -1,0 +1,84 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Delicious Table - About Us</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+
+     <header class="main-header">
+        <div class="container">
+            <h1 class="logo">The Delicious Table</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="Template Gemini.html" target="_blank">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html" target="_blank">Menu</a></li>
+                    <li><a href="reservations.html" target="_blank">Reservations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+     <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="about-content">
+                <h3>Our Story</h3>
+                <p>Welcome to The Delicious Table, a culinary haven established with a passion for exquisite food and unforgettable dining experiences. Our journey began with a simple belief: that food should be a celebration of fresh, high-quality ingredients, artfully prepared and served with genuine hospitality.</p>
+                <p>From our humble beginnings, we've grown into a beloved establishment, known for our unique blend of traditional recipes and innovative culinary techniques. We source our ingredients locally whenever possible, ensuring every bite is bursting with authentic flavor. Come and discover why our patrons keep coming back for more!</p>
+            </div>
+            <div class="about-image">
+                <div class="slides">
+                    <img src="Restaraunt.jpg" alt="Restaurant Interior" class="slide" style="filter:brightness(60%) saturate(120%) contrast(150%);">
+                    <img src="Bar.jpg" alt="Bar" class="slide">
+                    <img src="Outside.jpg" alt="Outside view" class="slide">
+                    <img src="Reception.jpg" alt="Reception" class="slide">
+                    <img src="Lounge.jpg" alt="Lounge" class="slide">
+                    <img src="Bar.jpg" alt="Bar" class="slide">
+                    <img src="Restaraunt.jpg" alt="Restaurant Interior" class="slide" style="filter:brightness(60%) saturate(120%) contrast(150%);">
+                    <img src="Outside.jpg" alt="Outside view" class="slide">
+                    <img src="Reception.jpg" alt="Reception" class="slide" height="50%">
+                    <img src="Lounge.jpg" alt="Lounge" class="slide">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2025 The Delicious Table. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><img src="Facebook.png" alt="Facebook"></a>
+                <a href="#" aria-label="Instagram"><img src="Instagram.jpeg" alt="Instagram"></a>
+                <a href="#" aria-label="Twitter"><img src="snapchat.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+<script>
+let currentIndex = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
+
+function showSlide(index) {
+  if (index >= totalSlides) currentIndex = 0;
+  else if (index < 0) currentIndex = totalSlides - 1;
+  else currentIndex = index;
+
+  slides.style.transform = `translateX(-${currentIndex * 600}px)`;
+}
+
+function moveSlide(step) {
+  showSlide(currentIndex + step);
+}
+
+setInterval(() => moveSlide(1), 3000);
+</script>
+   </body>
+   </html>
+  

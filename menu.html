@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Delicious Table - Menu</title>
+    <title>The Delicious Table - About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">The Delicious Table</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="Template Gemini.html" target="_blank">Home</a></li>
+                    <li><a href="about.html" target="_blank">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="reservations.html" target="_blank">Reservations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<section id="menu" class="menu-section section-padding">
+        <div class="container">
+            <h2>Our Menu</h2>
+
+            <div class="menu-item-group" id="starters">
+                <h3>Starters</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="Bruschhetta.jpg" alt="Bruschetta">
+                        <div class="item-details">
+                            <h4>Classic Bruschetta</h4>
+                            <p>Toasted bread with fresh tomatoes, basil, and a drizzle of balsamic glaze.</p>
+                        </div>
+                        <span class="price">$9.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Calamari.jpg" alt="Calamari">
+                        <div class="item-details">
+                            <h4>Crispy Calamari</h4>
+                            <p>Lightly fried calamari served with spicy marinara sauce.</p>
+                        </div>
+                        <span class="price">$12.50</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Soup.jpg" alt="Soup">
+                        <div class="item-details">
+                            <h4>Chef's Daily Soup</h4>
+                            <p>Freshly prepared soup with seasonal ingredients.</p>
+                        </div>
+                        <span class="price">$7.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item-group" id="main-courses">
+                <h3>Main Courses</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="Pasta.jpg" alt="Pasta">
+                        <div class="item-details">
+                            <h4>Homemade Pasta Carbonara</h4>
+                            <p>Creamy pasta with pancetta, egg yolk, and Parmesan cheese.</p>
+                        </div>
+                        <span class="price">$18.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Steak.jpg" alt="Steak">
+                        <div class="item-details">
+                            <h4>Grilled Ribeye Steak</h4>
+                            <p>10oz Ribeye cooked to perfection, served with seasonal vegetables.</p>
+                        </div>
+                        <span class="price">$28.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Salmon.jpg" alt="Salmon">
+                        <div class="item-details">
+                            <h4>Pan-Seared Salmon</h4>
+                            <p>Atlantic salmon with lemon-dill sauce and roasted potatoes.</p>
+                        </div>
+                        <span class="price">$22.50</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item-group" id="desserts">
+                <h3>Desserts</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="Tiramisu.jpg" alt="Tiramisu">
+                        <div class="item-details">
+                            <h4>Classic Tiramisu</h4>
+                            <p>Layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                        </div>
+                        <span class="price">$8.50</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Cheesecake.jpg" alt="Cheesecake">
+                        <div class="item-details">
+                            <h4>New York Cheesecake</h4>
+                            <p>Rich and creamy cheesecake with a berry compote.</p>
+                        </div>
+                        <span class="price">$7.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item-group">
+                <h3 id="drinks">Drinks</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="Coffee.jpg" alt="Coffee">
+                        <div class="item-details">
+                            <h4>Espresso</h4>
+                            <p>A strong shot of freshly brewed coffee.</p>
+                        </div>
+                        <span class="price">$3.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Wine.jpg" alt="Wine">
+                        <div class="item-details">
+                            <h4>House Red Wine</h4>
+                            <p>A fine selection of our house red wine by the glass.</p>
+                        </div>
+                        <span class="price">$9.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="menu-select">
+        <p style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 2em; text-align: center; justify-content: center; padding-top: 0%;">Menu</p>
+    </div>
+
+<style>
+    .menu-container {
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+    }
+    .menu-item {
+        padding: 15px 30px;
+        background-color: #f0f0f0;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 18px;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+    .menu-item:hover {
+        background-color: #e0e0e0;
+    }
+    .circle-menu {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .menu-container:hover .circle-menu,
+    .circle-menu.visible {
+        display: block;
+        opacity: 1;
+    }
+    .circle {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .circle:hover {
+        background-color: #45a049;
+    }
+    /* Position circles in a circular pattern */
+    .circle:nth-child(1) { transform: translate(0, -120px); }
+    .circle:nth-child(2) { transform: translate(104px, -60px); }
+    .circle:nth-child(3) { transform: translate(104px, 60px); }
+    .circle:nth-child(4) { transform: translate(0, 120px); }
+    .circle:nth-child(5) { transform: translate(-104px, 60px); }
+    .circle:nth-child(6) { transform: translate(-104px, -60px); }
+</style>
+
+<div class="menu-container" id="menuContainer">
+    <div class="menu-item">Menu</div>
+    <div class="circle-menu" id="circleMenu">
+        <div class="circle" onclick="scrollToSection('starters)">Starters</div>
+        <div class="circle" onclick="scrollToSection('mains')">Mains</div>
+        <div class="circle" onclick="scrollToSection('desserts')">Desserts</div>
+        <div class="circle" onclick="scrollToSection('drinks')">Drinks</div>
+        <div class="circle" onclick="scrollToSection('specials')">Specials</div>
+        <div class="circle" onclick="scrollToSection('sides')">Sides</div>
+    </div>
+</div>
+
+
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2025 The Delicious Table. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><img src="Facebook.png" alt="Facebook"></a>
+                <a href="#" aria-label="Instagram"><img src="Instagram.jpeg" alt="Instagram"></a>
+                <a href="#" aria-label="Twitter"><img src="snapchat.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+
+<script>
+    const menuContainer = document.getElementById('menuContainer');
+    const circleMenu = document.getElementById('circleMenu');
+    let timeout;
+
+    menuContainer.addEventListener('mouseenter', () => {
+        clearTimeout(timeout);
+        circleMenu.classList.add('visible');
+    });
+
+    menuContainer.addEventListener('mouseleave', () => {
+        timeout = setTimeout(() => {
+            circleMenu.classList.remove('visible');
+        }, 1000);
+    });
+
+    circleMenu.addEventListener('mouseenter', () => {
+        clearTimeout(timeout);
+    });
+
+    circleMenu.addEventListener('mouseleave', () => {
+        timeout = setTimeout(() => {
+            circleMenu.classList.remove('visible');
+        }, 1000);
+    });
+
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+            circleMenu.classList.remove('visible');
+        }
+    }
+</script>
+
+</body>
+</html>
